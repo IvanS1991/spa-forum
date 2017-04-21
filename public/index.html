@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>SOME TITLE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./bower_components/normalize-css/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+
+        <!-- L I B R A R I E S -->
+        <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="./bower_components/sammy/lib/sammy.js"></script>
+        <script type="text/javascript" src="./bower_components/handlebars/handlebars.js"></script>
+
+        <!-- C O N T R O L L E R S -->
+        <script type="text/javascript" src="./js/controllers/main-controller.js"></script>
+        <script type="text/javascript" src="./js/controllers/user-controller.js"></script>
+        <script type="text/javascript" src="./js/controllers/thread-controller.js"></script>
+        <script type="text/javascript" src="./js/controllers/post-controller.js"></script>
+
+        <!-- U T I L S -->
+        <script type="text/javascript" src="./js/utils/requester.js"></script>
+        <script type="text/javascript" src="./js/utils/data.js"></script>
+        <script type="text/javascript" src="./js/utils/templates.js"></script>
+
+        <!-- E V E N T  H A N D L I N G
+        <script type="text/javascript" src="./js/event-handling/handlers.js"></script>
+        <script type="text/javascript" src="./js/event-handling/events.js"></script>
+         -->
+
+        <!-- A P P -->
+        <script type="text/javascript" src="./js/app.js"></script>
+
+
+    </head>
+    
+    <body>
+
+        <div id="wrapper">
+            <header>
+                <div id="control-login"></div>
+                <div id="banner">
+                    <h1>BANNER</h1>
+                </div>
+            </header>
+            <nav>
+                <ul id="nav-main">
+                    <li><a href="#/">HOME</a></li>
+                    <li><a href="#/authors">AUTHORS</a></li>
+                    <li><a href="#/forum">FORUM</a></li>
+                </ul>
+            </nav>
+
+            <div id="forum-search">
+                <input type="text" id="tb-forum-search" placeholder="Search...">
+                <button id="btn-forum-search">Search</button>
+            </div>
+            <div id="content"></div>
+        </div>
+
+    </body>
+
+</html>

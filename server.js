@@ -19,6 +19,7 @@ let app = express();
 // M I D D L E W A R E
 app.use(cors());
 app.use(bodyParser.json());
+app.use("/", express.static("./public"));
 
 // C O N T R O L L E R S
 let userController = require("./controllers/user-controller.js")(dbHelper, validator, factory);

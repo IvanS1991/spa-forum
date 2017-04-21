@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+header, #content {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#control-login p {
+    text-align: right;
+}
+
+#nav-main {
+    float: left;
+}
+
+#nav-main li {
+    display: inline-block;
+}
+
+#forum-search {
+    float: right;
+}
+
+#content {
+    clear: both;
+}
+
+.form-control * {
+    display: block;
+    margin: auto;
+}
+
+.forum-thread-container, .post-container {
+    margin: 20px 0px;
+    padding: 5px 15px;
+    border: 1px solid grey;
+}

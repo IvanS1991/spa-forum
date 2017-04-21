@@ -20,9 +20,10 @@ module.exports = function(db) {
         return obj;
     }
 
-    let getItem = function(key, item) {
+    let findItem = function(key, item) {
         return db.get(key)
-                    .find(item);
+                    .find(item)
+                    .value();
     }
 
     let get = function(key) {
@@ -33,7 +34,7 @@ module.exports = function(db) {
         insertItem: insertItem,
         removeItem: removeItem,
         getItems: getItems,
-        getItem: getItem,
+        findItem: findItem,
         get: get
     }
 }

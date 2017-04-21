@@ -1,0 +1,16 @@
+<a href="#/create-post?threadId={{threadId}}">Create new post</a>
+<div class="post-container">
+    <h1>{{title}}</h1>
+    <h2>{{author}}</h2>
+    <p>{{content}}</p>
+    {{#if posts}}
+    <ul>
+        {{#each posts}}
+        <li class="post-container">
+            <h2>{{author}}</h2>
+            <p>{{content}}</p>
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</div>

@@ -1,44 +1,43 @@
 {
   "users": [
     {
-      "username": "haifischy",
-      "password": "Asdf123",
-      "userId": "uBwpVjwxmCijf4RtG5nhMBMvPn7uGR58W4vFlW0n",
-      "authKey": "haifischyD5nlE1un5pgfQCBoQMz2IljyDsM6QHLmLiLMi3NjmM1MHl6Rxd88hFEsusiO"
+      "username": "ivan",
+      "password": "Cyka123",
+      "userId": "FV6FonxoZjwupbH0tJ6zfzerXhg87SAtMRbcKU9o",
+      "authKey": "ivanLLG5GvThWHkaEm1MX7oXjCwjjf84tkBGTJjqfxPpnhtFEaua7nC6ReqDpiOJ"
+    },
+    {
+      "username": "pesho",
+      "password": "Gosho123",
+      "userId": "vMyAuY3kiAF7ks8AjiTi5M54r0hdEFztX8URtOFy",
+      "authKey": "peshoV7PenSREWRxzncXQm2LjT4DnTwF286KM2FqmxZgFK44qhlvvot8SXJcHCCPz"
     }
   ],
   "threads": [
     {
-      "author": "haifischy",
-      "authorId": "uBwpVjwxmCijf4RtG5nhMBMvPn7uGR58W4vFlW0n",
-      "threadId": "THREADXNCEo6k8x2ZB5EPu0Edk",
-      "title": "dsafqf",
-      "content": "gewqg",
-      "posts": [
-        {
-          "author": "haifischy",
-          "authorId": "uBwpVjwxmCijf4RtG5nhMBMvPn7uGR58W4vFlW0n",
-          "parrentThread": "THREADXNCEo6k8x2ZB5EPu0Edk",
-          "postId": "POSTY58mbLYYMy9OBWATTwQLo5HJeRVA0LqzdVXHhRXASLd8pUys57",
-          "content": "gewqg"
-        }
-      ]
+      "author": "pesho",
+      "authorId": "vMyAuY3kiAF7ks8AjiTi5M54r0hdEFztX8URtOFy",
+      "threadId": "THREADXAeq842CDiLFLboaiLtK",
+      "title": "brqweb",
+      "content": "rbqweb",
+      "posts": []
+    },
+    {
+      "author": "ivan",
+      "authorId": "FV6FonxoZjwupbH0tJ6zfzerXhg87SAtMRbcKU9o",
+      "threadId": "THREAD7vlQ2hcHzrpUruYzl8HC",
+      "title": "rerqwq",
+      "content": "wrwqrqwe",
+      "posts": []
     }
   ],
   "posts": [
     {
-      "author": "haifischy",
-      "authorId": "uBwpVjwxmCijf4RtG5nhMBMvPn7uGR58W4vFlW0n",
-      "parrentThread": "THREADXNCEo6k8x2ZB5EPu0Edk",
-      "postId": "POSTY58mbLYYMy9OBWATTwQLo5HJeRVA0LqzdVXHhRXASLd8pUys57",
-      "content": "gewqg"
-    },
-    {
-      "author": "haifischy",
-      "authorId": "uBwpVjwxmCijf4RtG5nhMBMvPn7uGR58W4vFlW0n",
-      "parrentThread": "THREADXNCEo6k8x2ZB5EPu0Edk",
-      "postId": "POST2nmuCSPPtJUpM1jSjL0vmzZDbhC7HwKJfiFpOV81HQvob6lP28",
-      "content": "gewqg"
+      "author": "ivan",
+      "authorId": "FV6FonxoZjwupbH0tJ6zfzerXhg87SAtMRbcKU9o",
+      "parrentThread": "THREADXAeq842CDiLFLboaiLtK",
+      "postId": "POSTHIZ2VhK4QGgSpmFe7mrrZuwlkadg9EeTH5EmeS6ljb4ywAO99R",
+      "content": "reqwrqw"
     }
   ]
 }

@@ -1,0 +1,8 @@
+<h1>FORUM</h1>
+<a href="#/create-thread">Create new thread</a>
+{{#each threads}}
+    <div class="forum-thread-container">
+        <p>Title: <a href="#/threads?threadId={{threadId}}" class="forum-thread-title">{{title}}</a></p>
+        <p>Author: {{author}}</p>
+    </div>
+{{/each}}

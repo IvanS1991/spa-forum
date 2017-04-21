@@ -10,16 +10,19 @@ module.exports = function(db, isValid, factory) {
         isValid.user(data);
         let newUser = factory.getUser(data.username, data.password);
         db.insertItem("users", newUser);
-        response.send(`Created user ${newUser.username}`);
+        response.send({
+                username: newUser.username,
+                authKey: newUser.authKey
+            });
     };
 
     let put = function(request, response) {
         let data = request.body;
-        let match = db.getItem("users", data).value();
+        let match = db.findItem("users", data);
         
         if (match) {
             response.send({
-                userId: match.userId,
+                username: match.username,
                 authKey: match.authKey
             })
         } else {

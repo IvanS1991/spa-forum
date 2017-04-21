@@ -1,0 +1,9 @@
+{{#if LOGIN_USER_NAME}}
+<p>
+    Logged in as {{LOGIN_USER_NAME}} <a href="/" id="btn-logout">Logout</a>
+</p>
+{{else}}
+<p>
+    <a href="#/login">Login</a> or <a href="#/register">Register</a>
+</p>
+{{/if}}

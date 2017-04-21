@@ -7,7 +7,7 @@ module.exports = function(db, isValid, factory) {
     let post = function(request, response) {
         let data = request.body;
         isValid.post(data);
-        let author = db.getItem("users", {authKey: data.authKey}).value();
+        let author = db.findItem("users", {authKey: data.authKey});
         let newPost = factory.getPost(author.username, author.userId, data.threadId, data.content);
         db.insertItem("posts", newPost);
         response.send("Created post");
