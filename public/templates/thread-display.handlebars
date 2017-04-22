@@ -1,8 +1,11 @@
+{{#with thread}}
 <a href="#/create-post?threadId={{threadId}}">Create new post</a>
 <div class="post-container">
+    
     <h1>{{title}}</h1>
     <h2>{{author}}</h2>
     <p>{{content}}</p>
+{{/with}}
     {{#if posts}}
     <ul>
         {{#each posts}}

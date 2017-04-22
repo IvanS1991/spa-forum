@@ -25,7 +25,6 @@ module.exports = function(generator) {
             this.threadId = generator.threadId();
             this.title = title;
             this.content = content;
-            this.posts = [];
         }
     }
 

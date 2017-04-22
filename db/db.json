@@ -1,43 +1,5 @@
 {
-  "users": [
-    {
-      "username": "ivan",
-      "password": "Cyka123",
-      "userId": "FV6FonxoZjwupbH0tJ6zfzerXhg87SAtMRbcKU9o",
-      "authKey": "ivanLLG5GvThWHkaEm1MX7oXjCwjjf84tkBGTJjqfxPpnhtFEaua7nC6ReqDpiOJ"
-    },
-    {
-      "username": "pesho",
-      "password": "Gosho123",
-      "userId": "vMyAuY3kiAF7ks8AjiTi5M54r0hdEFztX8URtOFy",
-      "authKey": "peshoV7PenSREWRxzncXQm2LjT4DnTwF286KM2FqmxZgFK44qhlvvot8SXJcHCCPz"
-    }
-  ],
-  "threads": [
-    {
-      "author": "pesho",
-      "authorId": "vMyAuY3kiAF7ks8AjiTi5M54r0hdEFztX8URtOFy",
-      "threadId": "THREADXAeq842CDiLFLboaiLtK",
-      "title": "brqweb",
-      "content": "rbqweb",
-      "posts": []
-    },
-    {
-      "author": "ivan",
-      "authorId": "FV6FonxoZjwupbH0tJ6zfzerXhg87SAtMRbcKU9o",
-      "threadId": "THREAD7vlQ2hcHzrpUruYzl8HC",
-      "title": "rerqwq",
-      "content": "wrwqrqwe",
-      "posts": []
-    }
-  ],
-  "posts": [
-    {
-      "author": "ivan",
-      "authorId": "FV6FonxoZjwupbH0tJ6zfzerXhg87SAtMRbcKU9o",
-      "parrentThread": "THREADXAeq842CDiLFLboaiLtK",
-      "postId": "POSTHIZ2VhK4QGgSpmFe7mrrZuwlkadg9EeTH5EmeS6ljb4ywAO99R",
-      "content": "reqwrqw"
-    }
-  ]
+  "users": [],
+  "threads": [],
+  "posts": []
 }

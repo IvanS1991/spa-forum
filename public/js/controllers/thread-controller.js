@@ -28,17 +28,17 @@ let threadController = (function() {
 
     let getThread = function(context) {
         let threadId = context.params.threadId;
-        let threadData;
 
         data.thread.getThread(threadId)
             .then(function(response) {
-                threadData = response;
+                console.log(response);
+                templates.get("thread-display")
+                    .then(function(template) {
+                        context.$element().html(template(response));
+                    });
             });
 
-        templates.get("thread-display")
-            .then(function(template) {
-                context.$element().html(template(threadData));
-            });
+        
     }
 
     return {

@@ -3,12 +3,15 @@ module.exports = function(db, isValid, factory) {
     let get = function(request, response) {
         let id = request.query.threadID;
         if (id) {
+            let data = {};
             let thread = db.findItem("threads", {threadId: id});
             let posts = db.get("posts")
                     .filter({parrentThread: id})
                     .value();
-            thread.posts = posts;
-            response.send(thread);
+            data.thread = thread;
+            data.posts = posts;
+            console.log(data);
+            response.send(data);
         } else {
             let threads = db.getItems("threads");
             response.send(threads);

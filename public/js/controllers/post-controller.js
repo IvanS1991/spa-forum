@@ -22,6 +22,7 @@ let postController = (function() {
                     data.post.create(post)
                         .then(function() {
                             alert("Successfuly created post");
+                            window.location.replace(`#/threads?threadId=${thread.id}`);
                         }, function () {
                             alert("Couldn't create post");
                         });
