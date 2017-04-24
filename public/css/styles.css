@@ -37,8 +37,15 @@ header, #content {
     margin: auto;
 }
 
-.forum-thread-container, .post-container {
+.forum-thread-container,  .content {
     margin: 20px 0px;
     padding: 5px 15px;
-    border: 1px solid grey;
+}
+
+.content {
+    box-shadow: 1px 1px 2px black;
+}
+
+.post-container {
+    list-style: none;
 }

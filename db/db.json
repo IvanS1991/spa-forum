@@ -1,5 +1,38 @@
 {
-  "users": [],
-  "threads": [],
-  "posts": []
+  "users": [
+    {
+      "username": "ivan",
+      "password": "Asdf123",
+      "userId": "crBcZbclnuXMUVWMh93L1BzKO5NFFOaIN9hgKayQ",
+      "authKey": "ivan4XW0iTv6Ly3Y3kAFi8rFNSvkQYgwbWJTzkuLs00P3Xeh7LbIi7glxuSriX25",
+      "created": "24-03-2017 / 14:24:21"
+    },
+    {
+      "username": "goshko",
+      "password": "Dsaf123",
+      "userId": "og6cR6aZdpwN5ieXhwsFPgvUR0COJq9CyMbpW05y",
+      "authKey": "goshkoccMQXBZJDKA0wRHyqR4icRgAZ5jabfI8hKMenyWsiSJE22DWhzqCBWn4yY6P",
+      "created": "24-03-2017 / 14:24:43"
+    }
+  ],
+  "threads": [
+    {
+      "author": "ivan",
+      "authorId": "crBcZbclnuXMUVWMh93L1BzKO5NFFOaIN9hgKayQ",
+      "threadId": "THREAD05TXfd9F9eKwaJ6krfVz",
+      "title": "Serious stuff",
+      "content": "Very serious",
+      "created": "24-03-2017 / 14:24:31"
+    }
+  ],
+  "posts": [
+    {
+      "author": "goshko",
+      "authorId": "og6cR6aZdpwN5ieXhwsFPgvUR0COJq9CyMbpW05y",
+      "content": "Yeah sure...",
+      "parrentThread": "THREAD05TXfd9F9eKwaJ6krfVz",
+      "postId": "POSTF5p06hrUt0d7P9s8Bma9Vm6GrCJiqxPd9hYYUvcv0Mc9UJ3t3V",
+      "created": "24-03-2017 / 14:25:01"
+    }
+  ]
 }

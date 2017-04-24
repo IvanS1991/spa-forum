@@ -1,4 +1,4 @@
-module.exports = function() {
+module.exports = (function() {
     let symbols = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890";
     let len = symbols.length;
 
@@ -34,4 +34,4 @@ module.exports = function() {
         postId: postId,
         threadId: threadId
     }
-}
+}())

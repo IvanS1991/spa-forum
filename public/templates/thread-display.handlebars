@@ -1,17 +1,20 @@
 {{#with thread}}
 <a href="#/create-post?threadId={{threadId}}">Create new post</a>
 <div class="post-container">
-    
-    <h1>{{title}}</h1>
-    <h2>{{author}}</h2>
-    <p>{{content}}</p>
+    <hr>
+    <h1>Title: {{title}}</h1>
+    <h2>Author: {{author}}</h2>
+    <h3>Created: {{created}}</h3>
+    <div class="content">{{content}}</div>
 {{/with}}
     {{#if posts}}
     <ul>
         {{#each posts}}
+        <hr>
         <li class="post-container">
-            <h2>{{author}}</h2>
-            <p>{{content}}</p>
+            <h2>Author: {{author}}</h2>
+            <h3>Created: {{created}}</h3>
+            <div class="content">{{content}}</div>
         </li>
         {{/each}}
     </ul>

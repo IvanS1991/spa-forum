@@ -4,7 +4,9 @@ module.exports = function(db) {
         existingUser: "existing user",
         invalidUsername: "username must be between 2 and 20 symbols long and contain letters and numbers only",
         invalidPassword: "password must contain small and big latin letters, numbers and be between 6 and 40 symbols long",
-        invalidThread: "invalid thread object"
+        invalidThread: "invalid thread object",
+        invalidTitle: "title can't be an empty string",
+        invalidContent: "content can't be an empty string"
     }
 
     let user = function(obj) {
@@ -28,10 +30,18 @@ module.exports = function(db) {
     }
 
     let thread = function(obj) {
-        let invalidObject = !obj.hasOwnProperty("title") || !obj.hasOwnProperty("content") || !obj.hasOwnProperty("authKey");
+        let invalidObject = !obj.hasOwnProperty("title") || !obj.hasOwnProperty("content") || !obj.hasOwnProperty("authKey"),
+            invalidTitle = obj.title.length === 0,
+            invalidContent = obj.content.length === 0;
 
         if (invalidObject) {
             throw new Error(err.invalidThread);
+        }
+        if (invalidTitle) {
+            throw new Error(err.invalidTitle);
+        }
+        if (invalidContent) {
+            throw new Error(err.invalidContent);
         }
     }
 

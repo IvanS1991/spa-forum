@@ -1,30 +1,37 @@
-module.exports = function(generator) {
+module.exports = (function() {
+
+    let generator = require("./generator"),
+        timeParser = require("./time-parser");
+
     class User {
         constructor(username, password) {
             this.username = username;
             this.password = password;
             this.userId = generator.userId();
             this.authKey = generator.authKey(this.username);
-        }
-    }
-
-    class Post {
-        constructor(author, authorId, threadId, content) {
-            this.author = author;
-            this.authorId = authorId;
-            this.parrentThread = threadId;
-            this.postId = generator.postId();
-            this.content = content;
+            this.created = timeParser(new Date());
         }
     }
 
     class Thread {
-        constructor(author, authorId, title, content) {
+        constructor(author, authorId, content, title) {
             this.author = author;
             this.authorId = authorId;
             this.threadId = generator.threadId();
             this.title = title;
             this.content = content;
+            this.created = timeParser(new Date());
+        }
+    }
+    
+    class Post {
+        constructor(author, authorId, content, parrentThreadId) {
+            this.author = author;
+            this.authorId = authorId;
+            this.content = content;
+            this.parrentThread = parrentThreadId;
+            this.postId = generator.postId();
+            this.created = timeParser(new Date());
         }
     }
 
@@ -39,4 +46,4 @@ module.exports = function(generator) {
             return new Post(author, authorId, threadId, content);
         }
     }
-}
+}())

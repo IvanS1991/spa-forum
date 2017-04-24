@@ -1,4 +1,6 @@
-module.exports = function(db, isValid, factory) {
+module.exports = function(db, isValid) {
+
+    let factory = require("../utils/factory");
 
     let get = function(request, response) {
         let users = db.getItems("users");

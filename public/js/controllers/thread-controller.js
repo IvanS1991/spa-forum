@@ -19,7 +19,7 @@ let threadController = (function() {
                     data.thread.create(thread)
                         .then(function() {
                             alert("Successfuly created thread");
-                        }, function () {
+                        }, function (err) {
                             alert("Couldn't create thread");
                         });
                 })

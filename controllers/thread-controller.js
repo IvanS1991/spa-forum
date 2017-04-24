@@ -1,4 +1,6 @@
-module.exports = function(db, isValid, factory) {
+module.exports = function(db, isValid) {
+
+    let factory = require("../utils/factory");
 
     let get = function(request, response) {
         let id = request.query.threadID;
@@ -10,7 +12,6 @@ module.exports = function(db, isValid, factory) {
                     .value();
             data.thread = thread;
             data.posts = posts;
-            console.log(data);
             response.send(data);
         } else {
             let threads = db.getItems("threads");
@@ -23,7 +24,7 @@ module.exports = function(db, isValid, factory) {
         let data = request.body;
         isValid.thread(data);
         let author = db.findItem("users", {authKey: data.authKey});
-        let newThread = factory.getThread(author.username, author.userId, data.title, data.content);
+        let newThread = factory.getThread(author.username, author.userId, data.content, data.title);
         db.insertItem("threads", newThread);
         response.send(newThread);
     };
